@@ -105,29 +105,29 @@ gdal_retile.py -v -r bilinear -levels 3 -ps 256 256 -pyramidOnly -co “TILED=YE
 
 - 添加影像金字塔数据源
 
-![image-20210113105235229](imgs/image-20210113105235229.png)
+![image-20210113105235229](./imgs/image-20210113105235229.png)
 
 - 设置数据源的名称及路径（如果数据量较大，请耐心等待）
 
-![image-20210113105431205](imgs/image-20210113105431205.png)
+![image-20210113105431205](./imgs/image-20210113105431205.png)
 
 - 新建图层，发布服务
 
-![image-20210113105551130](imgs/image-20210113105551130.png)
+![image-20210113105551130](./imgs/image-20210113105551130.png)
 
 - 服务参数设置，是熟悉的界面啊
 
-![image-20210113105658057](imgs/image-20210113105658057.png)
+![image-20210113105658057](./imgs/image-20210113105658057.png)
 
 
 
-![image-20210113110228603](imgs/image-20210113110228603.png)
+![image-20210113110228603](./imgs/image-20210113110228603.png)
 
 
 
 - 服务图层预览
 
-![image-20210113110356765](imgs/image-20210113110356765.png)
+![image-20210113110356765](./imgs/image-20210113110356765.png)
 
 **问题: 通过获取黑边的值发现rgb并不是都为0，0，0，所以在设置完透明值后还是会出现黑边，正在寻找解决方案，后续更新。，暂时没有找到解决办法。**
 
@@ -137,17 +137,17 @@ gdal_retile.py -v -r bilinear -levels 3 -ps 256 256 -pyramidOnly -co “TILED=YE
 
 ### `geoserver` 中发布栅格服务
 
-![image-20210113112310723](imgs/image-20210113112310723.png)
+![image-20210113112310723](./imgs/image-20210113112310723.png)
 
-![image-20210113112423027](imgs/image-20210113112423027.png)
+![image-20210113112423027](./imgs/image-20210113112423027.png)
 
-![image-20210113112553455](imgs/image-20210113112553455.png)
+![image-20210113112553455](./imgs/image-20210113112553455.png)
 
 ### `geoserver` 自定义切片规则
 
-![image-20210113111200602](imgs/image-20210113111200602.png)
+![image-20210113111200602](./imgs/image-20210113111200602.png)
 
-![image-20210113111503638](imgs/image-20210113111503638.png)
+![image-20210113111503638](./imgs/image-20210113111503638.png)
 
 
 
@@ -155,21 +155,21 @@ gdal_retile.py -v -r bilinear -levels 3 -ps 256 256 -pyramidOnly -co “TILED=YE
 
 - 影像图层中添加自定义的切片规则
 
-![](imgs/image-20210113111927023.png)
+![](./imgs/image-20210113111927023.png)
 
 - 切片设置
 
-![image-20210113111643865](imgs/image-20210113111643865.png)
+![image-20210113111643865](./imgs/image-20210113111643865.png)
 
-![image-20210113113505455](imgs/image-20210113113505455.png)
+![image-20210113113505455](./imgs/image-20210113113505455.png)
 
 - 切片结果，在geoserver的安装路径下：`data_dir\gwc\districts_mosaic\`，就可以看到切片结果了
 
-![image-20210113113618333](imgs/image-20210113113618333.png)
+![image-20210113113618333](./imgs/image-20210113113618333.png)
 
 - 切片预览
 
-![image-20210113115303021](imgs/image-20210113115303021.png)
+![image-20210113115303021](./imgs/image-20210113115303021.png)
 
 ### 高德地图和cesium中加载该切片地图影像
 
@@ -196,7 +196,7 @@ this.viewer.imageryLayers.add(layer)
 
 结果预览：
 
-![image-20210113115051168](imgs/image-20210113115051168.png)
+![image-20210113115051168](./imgs/image-20210113115051168.png)
 
 #### 高德地图加载geoserver的wtms
 
@@ -217,4 +217,4 @@ layer.setMap(map);
 
 结果预览：
 
-![image-20210113114800659](imgs/image-20210113114800659.png)
+![image-20210113114800659](./imgs/image-20210113114800659.png)

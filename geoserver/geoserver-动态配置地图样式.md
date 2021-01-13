@@ -59,7 +59,7 @@
 
 [http://117.159.25.220:8081/geoserver/districts/wms?service=WMS&version=1.1.0&request=GetMap&layers=districts%3At_greenbelt_info&bbox=113.589241027832%2C34.7131233215332%2C114.086944580078%2C34.7861442565918&width=768&height=330&srs=EPSG%3A4326&format=application/openlayers&env=labelOpacity:1](http://117.159.25.220:8081/geoserver/districts/wms?service=WMS&version=1.1.0&request=GetMap&layers=districts%3At_greenbelt_info&bbox=113.589241027832%2C34.7131233215332%2C114.086944580078%2C34.7861442565918&width=768&height=330&srs=EPSG%3A4326&format=application/openlayers&env=labelOpacity:1#toggle)
 
-![img](imgs/geoserver-动态样式.png)
+![img](./imgs/geoserver-动态样式.png)
 
 ## 方案二--sld_body动态改变图层样式
 
