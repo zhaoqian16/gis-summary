@@ -4,7 +4,7 @@
 
 一个点状图层，数据量大，显示时点互相遮盖，看起来混乱（如图）：
 
-![img](imgs/聚合-背景.png)
+![img](./imgs/聚合-背景.png)
 
 想要在发布地图服务的时候对数据进行聚合。
 
@@ -36,14 +36,14 @@ geoserver集成的有render-transform工具，根据该工具可实现聚合。�
 
 - 解压文件之后，将其文件复制至`geoserver`安装处的`webapps\geoserver\WEB-INF\lib`中
 
-![img](imgs/clipboard.png)
+![img](./imgs/clipboard.png)
 
-![img](imgs/clipboard-1610519652546.png)
+![img](./imgs/clipboard-1610519652546.png)
 
 - 重启`geoserver`即可
 - 验证：主页面左侧导航栏的服务——wps出现，即安装成功。
 
-![img](imgs/clipboard-1610519656058.png)
+![img](./imgs/clipboard-1610519656058.png)
 
 
 
@@ -445,9 +445,9 @@ http://localhost:8081/geoserver/districts/wms?service=WMS&version=1.1.0&request=
 
 - 效果预览
 
-![img](imgs/clipboard-1610520516346.png)
+![img](./imgs/clipboard-1610520516346.png)
 
-![img](imgs/clipboard-1610520528407.png)
+![img](./imgs/clipboard-1610520528407.png)
 
 
 
@@ -457,6 +457,6 @@ http://localhost:8081/geoserver/districts/wms?service=WMS&version=1.1.0&request=
 
 怎么能够正确识别转换前图层的属性？
 
-![img](imgs/clipboard-1610520602236.png)
+![img](./imgs/clipboard-1610520602236.png)
 
-![img](imgs/clipboard-1610520604053.png)
+![img](./imgs/clipboard-1610520604053.png)
