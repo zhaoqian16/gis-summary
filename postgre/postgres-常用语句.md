@@ -47,6 +47,9 @@ SELECT ST_AsText(geom), ST_AsEwkt(geom), ST_X(geom), ST_Y(geom) FROM zyr_test WH
 
 SELECT ST_AsText(geom), ST_AsEwkt(geom), ST_X(geom), ST_Y(geom) FROM lzh WHERE objid ='4109970507000222';
 
+--将投影坐标系转换为地理坐标系，ST_Transform函数，首先需要确定该投影坐标的坐标系及WKID
+update coords_tranform a set geom = ST_Transform(st_setsrid(st_makepoint(a.coord_x, a.coord_y), 2383), 4326);
+
 -- round函数，第一个参数必须是numeric类型，第二个参数是保留几位小数
 select round(1.2345,2);
 
